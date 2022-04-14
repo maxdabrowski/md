@@ -19,18 +19,23 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
+
         <!-- Nawigacja-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="leanguage-type">
+                <img class="flag england" data-country="england" src="./data/img/england.png" alt="england">
+                <img class="flag" data-country="poland"  src="./data/img/poland.png" alt="poland">
+            </div>
             <div class="container">
                 <a class="title-web navbar-brand js-scroll-trigger" href="#page-top">Maksymilian Dąbrowski - portfolio</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about_me">O mnie</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Umiejętności</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Doświadczenie</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Projekty</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Kontakt</a></li>
+                        <li class="nav-item"><a id="nawAboutMe" class="nav-link js-scroll-trigger" href="#about_me">O mnie</a></li>
+                        <li class="nav-item"><a id="nawSkills" class="nav-link js-scroll-trigger" href="#skills">Umiejętności</a></li>
+                        <li class="nav-item"><a id="nawExperience" class="nav-link js-scroll-trigger" href="#experience">Doświadczenie</a></li>
+                        <li class="nav-item"><a id="nawPortfolio" class="nav-link js-scroll-trigger" href="#portfolio">Projekty</a></li>
+                        <li class="nav-item"><a id="nawContact" class="nav-link js-scroll-trigger" href="#contact">Kontakt</a></li>                   
                     </ul>
                 </div>
             </div>
@@ -45,7 +50,7 @@
                     </div>
                     <div class="col-lg-8 align-self-baseline">
                         <p class="text-white-75 font-weight-light mb-5">Junior frontend Developer</p>
-                        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about_me">Dowiedz się więcej</a>
+                        <a id="moreInfo" class="btn btn-primary btn-xl js-scroll-trigger" href="#about_me">Dowiedz się więcej</a>
                     </div>
                 </div>
             </div>
@@ -56,8 +61,8 @@
                 <div class="row justify-content-center">
                     <img class="about_me_img" src="./data/img/about_me_img.jpg" alt="About_me_img">
                     <div class="col-lg-8 text-center">
-                        <p class="text-white-50 mb-4 about_me">Cześć nazywam się Maksymilian Dąbrowski i jestem frontend developerem. Swoją przygodę z nauką programowania rozpocząłęm już ponad dwa lata temu, a od roku czasu pracuję w IT, i z każdym dniem poszerzam swoją wiedzę, zarówno w czasie pracy jak i w czasie wolnym. Posiadam pełne wykształcenie wyższe na kierunku Budownictwo, a w kierunku programowania zacząłem rozwijać się z pasji, i udało mi się pójść w tym kierunku. W tym momencie chciałbym wykonać kolejny krok, i dalej rozwijać się w technologiach, które mnie interesują, są nimi React, Redux oraz Node (express.js). Zapraszam do zapoznamnia się z moimi umiejętnościami oraz projektami.</p>
-                        <a class="btn btn-light btn-xl js-scroll-trigger" href="#portfolio">Projekty</a>
+                        <p id="ownDescript" class="text-white-50 mb-4 about_me">Cześć nazywam się Maksymilian Dąbrowski i jestem frontend developerem. Swoją przygodę z nauką programowania rozpocząłęm w 2018 roku, a od połowy 2019 czasu pracuję w IT, i z każdym dniem poszerzam swoją wiedzę, zarówno w czasie pracy jak i w czasie wolnym. Posiadam pełne wykształcenie wyższe na kierunku Budownictwo, a w kierunku programowania zacząłem rozwijać się z pasji, i udało mi się pójść w tym kierunku. W tym momencie chciałbym wykonać kolejny krok, i dalej rozwijać się w technologiach, które mnie interesują, są nimi React, Redux oraz Node (express.js) lub PHP (symfony). Zapraszam do zapoznamnia się z moimi umiejętnościami oraz projektami.</p>
+                        <a id="ownDescriptProjects"class="btn btn-light btn-xl js-scroll-trigger" href="#portfolio">Projekty</a>
                     </div>
                 </div>
             </div>
@@ -65,7 +70,7 @@
         <!-- Umiejętności -->
         <section class="page-section skills" id="skills">
             <div class="container">
-                <h2 class="text-center mt-0">Umiejętności</h2>
+                <h2 id="skilsSection" class="text-center mt-0">Umiejętności</h2>
                 <hr class="divider my-4" />
                 <div class="row row-block">
                     <div class="skill col-lg-4 col-md-6 text-center">
@@ -97,63 +102,62 @@
                     <div class="col skill  text-center">
                         <img src="./data/img/skills_icons/node.png" alt="node">
                     </div>
+                    <div class="col skill  text-center">
+                        <img src="./data/img/skills_icons/PHP.png" alt="php">
+                    </div>
                 </div>
             </div>
         </section>
         <!-- Doświadczenie -->    
         <section class="page-section" id="experience">
             <div class="container">
-                <h2 class="text-center mt-0">Doświadczenie</h2>
+                <h2 id="experienceSection" class="text-center mt-0">Doświadczenie</h2>
                     <hr class="divider my-4" />
                     <ul class="timeline">
                         <li>
                             <div class="timeline-image"><img class="rounded-circle img-fluid" src="data/img/about/1.jpg" alt="img1" /></div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>Kwiecień 2018</h4>
-                                    <h4 class="subheading">Początek nauki</h4>
+                                    <h4 id="april2018">Kwiecień 2018</h4>
+                                    <h4 id="april2018Tittle" class="subheading">Początek nauki</h4>
                                 </div>
-                                <div class="timeline-body"><p class="text-muted">Początek zainteresowania nauką programowania, kursy internetowe CodeBerry, Udemy (Samuraj programowania) i wiele innych. </p></div>
+                                <div  class="timeline-body"><p id="april2018Body" class="text-muted">Początek zainteresowania nauką programowania, kursy internetowe CodeBerry, Udemy (Samuraj programowania) i wiele innych. </p></div>
                             </div>
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image"><img class="rounded-circle img-fluid" src="data/img/about/2.jpg" alt="img2" /></div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>Sierpień 2018</h4>
-                                    <h4 class="subheading">Kurs Develop Web Applications</h4>
+                                    <h4 id="august2018">Sierpień 2018</h4>
+                                    <h4 id="august2018Tittle" class="subheading">Kurs Develop Web Applications</h4>
                                 </div>
-                                <div class="timeline-body"><p class="text-muted">Odbyłem 2-miesięczny kurs sponsorowany przez Unię Europejską: JavaScript and HTML5: Develop Web Applications i Java SE 8 Programming, (połączenie tych dwóch kursów było wymogiem odbycia kursu), gdzie mogłem zdobyć nową wiedzę, usystematyzować ówczesną, a po skończeniu dalej kontynuować naukę.</p></div>
+                                <div  class="timeline-body"><p id="august2018Body" class="text-muted">Odbyłem 2-miesięczny kurs sponsorowany przez Unię Europejską: JavaScript and HTML5: Develop Web Applications i Java SE 8 Programming, (połączenie tych dwóch kursów było wymogiem odbycia kursu), gdzie mogłem zdobyć nową wiedzę, usystematyzować ówczesną, a po skończeniu dalej kontynuować naukę.</p></div>
                             </div>
                         </li>
                         <li>
                             <div class="timeline-image"><img class="rounded-circle img-fluid" src="data/img/about/3.jpg" alt="img3" /></div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>Lipiec 2019</h4>
-                                    <h4 class="subheading">Staż w PZU.SA</h4>
+                                    <h4 id="july2019">Lipiec 2019</h4>
+                                    <h4 id="july2019Tittle" class="subheading">Staż w PZU.SA</h4>
                                 </div>
-                                <div class="timeline-body"><p class="text-muted">1 Lipca 2019 roku zacząłem 3-miesięczy staż w dziale IT w PZU.SA. Do moich obowiązków należało pomoc w utrzymaniu i rozwoju aplikacji dla Agentów, aplikacje te służą do obsługi klientów, udostępnianych im kontaktów, raportowaniu działań. Używane technologie to JavaScript, Html, Css, JQuery, SharePoint.</p></div>
+                                <div  class="timeline-body"><p id="july2019Body" class="text-muted">1 Lipca 2019 roku zacząłem 3-miesięczy staż w dziale IT w PZU.SA. Do moich obowiązków należało pomoc w utrzymaniu i rozwoju aplikacji dla Agentów, aplikacje te służą do obsługi klientów, udostępnianych im kontaktów, raportowaniu działań. Używane technologie to JavaScript, Html, Css, JQuery, React+Redux, PHP(symfony)</p></div>
                             </div>
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image"><img class="rounded-circle img-fluid" src="data/img/about/4.jpg" alt="img4" /></div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>Październik 2019</h4>
-                                    <h4 class="subheading">Specjalista - Projektant Programista w PZU.SA</h4>
+                                    <h4 id="october2019">Październik 2019</h4>
+                                    <h4 id="october2019Tittle" class="subheading">Specjalista - Projektant Programista w PZU.SA</h4>
                                 </div>
-                                <div class="timeline-body"><p class="text-muted">Po odbytym stażu zostałem w zespole jako pełnoprawny programista. Do moich obowiązków należą dalszy rozwój i utrzymanie aplikacji. Napisałem apliację do zgłaszania błędów w witrynach i raportach wykonywanych przez nasz zespól. Dodatkowo zdobyłem częściową wiedzę analityczną, w ramach pracy na bazach danych w środowisku SAS i Oracle.</p></div>
+                                <div class="timeline-body"><p id="october2019Body" class="text-muted">Po odbytym stażu zostałem w zespole jako pełnoprawny programista. Do moich obowiązków należą dalszy rozwój i utrzymanie aplikacji. Napisałem apliację do zgłaszania błędów w witrynach i raportach wykonywanych przez nasz zespól. Dodatkowo zdobyłem częściową wiedzę analityczną, w ramach pracy na bazach danych (Ms SQL). Dążę w kierunku fullstack developera, rozwijąjać się w technolgiach backendowych, oraz pogłębiam umiejętności pisania frontu używająć freamworków.</p></div>
                             </div>
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <h4>
-                                   Dołącz
-                                    <br />
-                                    do mojej
-                                    <br />
-                                    historii!
+                                <h4 id="joinMyHistory">
+                                   Dołącz do mojej historii!
                                 </h4>
                             </div>
                         </li>
@@ -169,7 +173,7 @@
                             <img class="img-fluid" src="data/img/projects/1.jpg" alt="" />
                             <div class="portfolio-box-caption">
                                 <div class="project-name">Cessare App</div>
-                                <div class="project-category lowercase text-white-50">Aplikacja, która ma na celu pomóc w zarządzaniu pizzerią, stworzona do użytku wśród pracowników i osób zarządzających małą pizzerią</div>
+                                <div id="CessareAppBody" class="project-category lowercase text-white-50">Aplikacja, która ma na celu pomóc w zarządzaniu pizzerią, stworzona do użytku wśród pracowników i osób zarządzających małą pizzerią</div>
                                 <div class="project-category text-white-50">EXPRESS, MONGO DB, PUG, CSS</div>
                             </div>
                         </a>
@@ -179,7 +183,7 @@
                             <img class="img-fluid" src="data/img/projects/2.jpg" alt="" />
                             <div class="portfolio-box-caption">
                                 <div class="project-name">Cessare Website</div>
-                                <div class="project-category lowercase text-white-50">Aplikacja służaca do dokonywania zamówień online</div>
+                                <div id="websiteAppBody"  class="project-category lowercase text-white-50">Aplikacja służaca do dokonywania zamówień online</div>
                                 <div class="project-category text-white-50">REACT, REDUX, CSS, API: EXPRESS</div>
                             </div>
                         </a>
@@ -188,8 +192,8 @@
                         <a class="portfolio-box" target="_blank" href="https://maxdabrowski.github.io/tabulatory_gitarowe/">
                             <img class="img-fluid" src="data/img/projects/3.jpg" alt="" />
                             <div class="portfolio-box-caption">
-                                <div class="project-name">TabulApptury gitarowe</div>
-                                <div class="project-category lowercase text-white-50">Aplikacja służąca do wyszukiwanie tabulatór gitarowych</div>
+                                <div id="guitarAppTittle" class="project-name">TabulApptury gitarowe</div>
+                                <div id="guitarAppBody" class="project-category lowercase text-white-50">Aplikacja służąca do wyszukiwanie tabulatór gitarowych</div>
                                 <div class="project-category text-white-50">REACT, CSS</div>
                             </div>
                         </a>
@@ -198,8 +202,8 @@
                         <a class="portfolio-box" target="_blank" href="https://paylead.herokuapp.com/">
                             <img class="img-fluid" src="data/img/projects/4.jpg" alt="" />
                             <div class="portfolio-box-caption">
-                                <div class="project-name">Sklep z kontaktami dla agnetów</div>
-                                <div class="project-category lowercase text-white-50">Aplikacja służy jako sklep, obsługa, porfel kontaktów dla agentów ubezpieczeniowych</div>
+                                <div  id="leadAppTittle"class="project-name">Sklep z kontaktami dla agnetów</div>
+                                <div id="leadAppBody" class="project-category lowercase text-white-50">Aplikacja służy jako sklep, obsługa, porfel kontaktów dla agentów ubezpieczeniowych</div>
                                 <div class="project-category text-white-50">ANGULAL, MATERIAL, RXJS, SCSS</div>
                             </div>
                         </a>
@@ -208,7 +212,7 @@
             </div>
             <div class="portfolio-footer bg-dark text-white">
                 <div class="container text-center">
-                    <p class="mb-4">Więcej małych projektów znadzjesz na starszej wersji mojego portfolio, a wszystkie kody na moim githubie. Kliknij poniżej.</p>
+                    <p id="moreProject" class="mb-4">Więcej małych projektów znadzjesz na starszej wersji mojego portfolio, a wszystkie kody na moim githubie. Kliknij poniżej.</p>
                 </div>
                 <div class="text-center">
                     <a class="icon" target="_blank" href="https://maxdabrowski.github.io/portfolio/" ><i class="far fa-file-code fa-5x mb-3"></i></a>
@@ -221,9 +225,9 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8 text-center">
-                        <h2 class="mt-0">Zostańmy w kontakcie!</h2>
+                        <h2 id="inConact" class="mt-0">Zostańmy w kontakcie!</h2>
                         <hr class="divider my-4" />
-                        <p class="text-muted mb-5">Spodobały Ci się moje projekty? Jestem otwary na każdą formę współpracy, zadzwoń, napisz, lub podrzuć moje CV swojemu szefowi!</p>
+                        <p id="footer" class="text-muted mb-5">Spodobały Ci się moje projekty? Jestem otwary na każdą formę współpracy, zadzwoń, napisz, lub podrzuć moje CV swojemu szefowi!</p>
                     </div>
                 </div>
                 <div class="row">
@@ -232,7 +236,7 @@
                         <div>+723 325 576 </div>
                     </div>
                     <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
-                        <a  class="icon" href="data/Maksymilian Dąbrowski CV.pdf" target="_blank"><i class="far fa-file-pdf fa-3x mb-3"></i></a>
+                        <a id="cv"  class="icon" href="data/Maksymilian_Dabrowski_CV-pol.pdf" target="_blank"><i class="far fa-file-pdf fa-3x mb-3"></i></a>
                           <div>CV</div>
 
 
